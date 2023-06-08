@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password generator</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="inner__container">
+
+      <h1 class="title">Password generator</h1>
+
+      <div class="form">
+        <div class="input password">
+          <input type="text" class="generated-password" id="password" placeholder="Your password" readonly>
+          <button id="copy" class="copy-btn"><i class="fa-regular fa-copy" style="color: #4a81f8;"></i></button>
+        </div>
+
+        <div class="checkboxes">
+          <div class="form-check">
+            <input class="checkbox" type="checkbox" value="" id="uppercase" name="checkbox">
+            <label class="checkbox-label" for="checkbox">
+              Uppercase
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="checkbox" type="checkbox" value="" id="lowercase" name="checkbox">
+            <label class="checkbox-label" for="checkbox">
+              Lowercase
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="checkbox" type="checkbox" value="" id="numbers" name="checkbox">
+            <label class="checkbox-label" for="checkbox">
+              Numbers
+            </label>
+          </div>
+        </div>
+
+        <div class="input length">
+          <input type="text" class="password-length" id="length" placeholder="Length">
+        </div>
+
+        
+      </div>
+
+      <button class="btn-start" id="start">Start</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
