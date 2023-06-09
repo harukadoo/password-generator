@@ -40,6 +40,12 @@ function requestServer(length, num, upper, lower) {
 function generatePassword() {
     const lengthInput = document.getElementById('length');
     const passwordLength = lengthInput.value;
+
+    if (passwordLength > 20){
+        alert('max length is 20!');
+        return
+    }
+
     const num = numberCheckbox.checked ? 'on' : 'off';
     const upper = uppercaseCheckbox.checked ? 'on' : 'off';
     const lower = lowercaseCheckbox.checked ? 'on' : 'off';
