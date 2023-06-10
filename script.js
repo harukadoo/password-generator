@@ -9,7 +9,7 @@ const passwordInput = document.getElementById('password');
 function requestServer(length, num, upper, lower) {
 
     function updateRequestUrl(length, num, upper, lower) {
-        const requestUrl = `http://www.random.org/strings/?num=1&len=${length}&digits=${num}&upperalpha=${upper}&loweralpha=${lower}&unique=on&format=plain&rnd=new`;
+        const requestUrl = `https://www.random.org/strings/?num=1&len=${length}&digits=${num}&upperalpha=${upper}&loweralpha=${lower}&unique=on&format=plain&rnd=new`;
         return requestUrl;
     }
 
