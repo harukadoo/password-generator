@@ -21,7 +21,7 @@ function requestServer(length, num, upper, lower) {
 
             xhr.onload = () => {
                 if (xhr.status === 200) {
-                    const response = xhr.responseText;
+                    const data = xhr.responseText;
                     resolve(data)
                     
                 } else {
